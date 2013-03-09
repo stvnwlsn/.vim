@@ -10,6 +10,9 @@ set nocompatible
 set background=dark
 syntax on
 
+" Run pep8
+let g:pep8_map='<leader>8'
+
 set autoindent
 set tabstop=4
 set shiftwidth=4
