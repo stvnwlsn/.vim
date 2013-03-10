@@ -3,12 +3,14 @@
 "
 " 
 filetype off
-call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
 call pathogen#helptags()
 
 set nocompatible
 set background=dark
 syntax on
+filetype on
+filetype plugin indent on
 
 " Run pep8
 let g:pep8_map='<leader>8'
