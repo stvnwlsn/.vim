@@ -8,8 +8,7 @@ git clone git@github.com:stvnwlsn/.vim.git
 ln -s ~/.vim/.vimrc ~/.vimrc
  
 # Install modules
-cd ~/.vim
-git submodule update --init
+cd ~/.vim && git submodule update --init
 
 # pep8 needs to be installed on system
 pip install pep8
