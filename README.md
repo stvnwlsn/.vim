@@ -2,7 +2,7 @@
 ##Setup
 ```
 # Clone repo
-git clone https://github.com/stvnwlsn/.vim.git
+git clone git@github.com:stvnwlsn/.vim.git
 
 # Symbolic link to .vimrc
 ln -s ~/.vim/.vimrc ~/.vimrc
