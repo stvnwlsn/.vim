@@ -1,0 +1,15 @@
+#Vim Cheat Sheet
+CTRL-Z exit buffer to bash
+%1 - return to vim
+:e file - open file in buffer to edit
+:ls - list buffers
+:b1 - go to buffer 1
+##Characterize
+ga - reveal representation
+CTRL-K {Pd=£, Co=©} - insert diagraph
+##NERDTree
+\n - toggle
+o - open file
+##pydoc
+K - show doc for word under cursor
+<leader>pw - as above
