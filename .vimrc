@@ -25,6 +25,9 @@ set completeopt=menu,longest,preview
 " Run pep8
 let g:pep8_map='<leader>8'
 
+" Map NERDTree toggle to <leader>
+map <leader>n :NERDTreeToggle<CR>
+
 set autoindent
 set tabstop=4
 set shiftwidth=4
