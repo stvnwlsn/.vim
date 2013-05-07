@@ -4,6 +4,7 @@ CTRL-Z exit buffer to bash
 :e file - open file in buffer to edit
 :ls - list buffers
 :b1 - go to buffer 1
+
 ##Characterize
 ga - reveal representation
 CTRL-K {Pd=£, Co=©} - insert diagraph
