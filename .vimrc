@@ -40,3 +40,5 @@ set cursorline
 hi cursorline guibg=#333333
 hi CursorColumn guibg=#333333
 
+" Buffer selection shortcut
+nnoremap <F5> :buffers<CR>:buffer<Space>
