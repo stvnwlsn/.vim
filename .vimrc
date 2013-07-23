@@ -42,3 +42,6 @@ hi CursorColumn guibg=#333333
 
 " Buffer selection shortcut
 nnoremap <F5> :buffers<CR>:buffer<Space>
+
+" Markdown to HTML
+nmap <leader>md :%!/usr/local/bin/Markdown.pl --html4tags <cr>
