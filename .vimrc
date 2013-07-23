@@ -44,4 +44,4 @@ hi CursorColumn guibg=#333333
 nnoremap <F5> :buffers<CR>:buffer<Space>
 
 " Markdown to HTML
-nmap <leader>md :%!/usr/local/bin/Markdown.pl --html4tags <cr>
+nmap <leader>md :%!Markdown.pl --html4tags <cr>
