@@ -15,3 +15,6 @@ o - open file
 ##pydoc
 K - show doc for word under cursor
 <leader>pw - as above
+##Spell
+z= - suggest spellings for word under cursor
+zg - add word under cursor as good word
