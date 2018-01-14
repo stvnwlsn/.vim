@@ -1,47 +1,67 @@
 " .vimrc
 " by Steven Wilson
 "
-" 
+"
+
 
 " Pathogen
-filetype off
-call pathogen#infect()
-call pathogen#helptags()
+execute pathogen#infect()
 
-set nocompatible
-set background=dark
 
-" Pyflakes
-syntax on
-filetype on
+filetype plugin on
 filetype plugin indent on
 
-" Supertab
-au FileType python set omnifunc=pythoncomplete#Complete
-let g:SuperTabDefaultCompletionType = "context"
+syntax on
+colorscheme zellner
 
-set completeopt=menu,longest,preview
 
-" Run pep8
-let g:pep8_map='<leader>8'
-
-" Map NERDTree toggle to <leader>
-map <leader>n :NERDTreeToggle<CR>
-
+" Options
+set nocompatible
 set autoindent
-set tabstop=4
-set shiftwidth=4
-set expandtab
-set ruler
-set number
-set spell
-set showmode
+set autoread
+set backspace=2
+set completeopt=menu,longest,preview
 set cursorline
-hi cursorline guibg=#333333
-hi CursorColumn guibg=#333333
+set cmdheight=2
+set dictionary+=/usr/share/dict/words,/usr/share/dict/freebsd
+set display=lastline
+set expandtab
+set history=200
+set incsearch
+set laststatus=2
+set lazyredraw
+set linebreak
+set mouse=nvi
+set mousemodel=popup
+set number
+set ruler
+set scrolloff=2
+set shiftwidth=4
+set showcmd
+set showmatch
+set showmode
+set sidescrolloff=5
+set smarttab
+set spell
+set spellfile=~/.vim/spell/en.utf-8.add     " Directory must exist
+set spelllang=en_gb
+set tabstop=4
+set textwidth=80
+set undodir=~/.vim/undo/                    " Directory must exist
+set undofile
+set virtualedit=block
+set visualbell
+set wildmenu
+set wildmode=longest:full,full
 
-" Buffer selection shortcut
-nnoremap <F5> :buffers<CR>:buffer<Space>
 
-" Markdown to HTML
-nmap <leader>md :%!Markdown.pl --html4tags <cr>
+" Mappings
+let mapleader =","
+nnoremap gs :pu! =strftime('%Y-%m-%d %H:%M')<cr>A<space>
+nnoremap <F5> :buffers<CR>:buffer<Space> 
+
+
+" Plugins
+map <leader>n :NERDTreeToggle<CR>
+let g:pep8_map='<leader>8'                  " Run pep8
+nmap <leader>md :%!Markdown.pl --html4tags <cr> 
