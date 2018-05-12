@@ -15,4 +15,7 @@ pip install pep8
 
 # Upgrade modules
 git submodule foreach git pull origin master
+
+# Add a new module
+git submodule add https://github.com/vim-perl/vim-perl.git bundle/vim-perl
 ```

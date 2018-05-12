@@ -12,7 +12,7 @@ filetype plugin on
 filetype plugin indent on
 
 syntax on
-colorscheme zellner
+colorscheme desert
 
 
 " Options
@@ -46,7 +46,7 @@ set spell
 set spellfile=~/.vim/spell/en.utf-8.add     " Directory must exist
 set spelllang=en_gb
 set tabstop=4
-set textwidth=80
+set textwidth=69
 set undodir=~/.vim/undo/                    " Directory must exist
 set undofile
 set virtualedit=block
@@ -65,3 +65,7 @@ nnoremap <F5> :buffers<CR>:buffer<Space>
 map <leader>n :NERDTreeToggle<CR>
 let g:pep8_map='<leader>8'                  " Run pep8
 nmap <leader>md :%!Markdown.pl --html4tags <cr> 
+
+"set formatprg=par\ -jw60
+"map <leader>q {v}!par -jw60<CR>
+"vmap <leader>q !par -jw60<CR>
